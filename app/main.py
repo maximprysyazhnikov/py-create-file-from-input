@@ -1,4 +1,4 @@
-def main() -> object:
+def main():
     # Ask the user for the file name
     file_name = input("Enter name of the file: ")
 
@@ -17,12 +17,12 @@ def main() -> object:
         content_lines.append(line)
 
     # Write the collected content to the file
-    with open(file_name, 'w') as file:
+    with open(file_name, "w") as file:
         for line in content_lines:
             file.write(line + "\n")
 
     # Confirm file creation
-    print(f"File '{file_name}' has been created with the following content:")
+    print(f"File \"{file_name}\" has been created with the following content:")
     for line in content_lines:
         print(line)
 
