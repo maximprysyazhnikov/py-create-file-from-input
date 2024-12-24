@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     # Ask the user for the file name
     file_name = input("Enter name of the file: ")
 
@@ -22,7 +22,7 @@ def main():
             file.write(line + "\n")
 
     # Confirm file creation
-    print(f"File \"{file_name}\" has been created with the following content:")
+    print(f'File "{file_name}" has been created with the following content:')
     for line in content_lines:
         print(line)
 
